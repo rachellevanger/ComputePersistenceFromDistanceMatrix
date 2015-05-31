@@ -1,2 +1,2 @@
 # ComputePersistenceFromDistanceMatrix
-Compute a persistence diagram from a distance matrix. It can subsample the distance matrix before running persistence.
+Computes a persistence diagram from a distance matrix. It can subsample the distance matrix before running persistence.
