@@ -37,7 +37,7 @@ for f in files:
 	# Contents from file_list.txt
 	strout = f + " "
 	f = f.split(" ")
-	filename = f[0]
+	filename = f[3]
 
 	# Write complex stats
 	complex_stats = ["rips_out_stat.txt", "graph_out_stat.txt"]

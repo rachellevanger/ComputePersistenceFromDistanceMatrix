@@ -43,16 +43,17 @@ do
 
 	LINE_TEXT=( $LINE )
 
-	OUTPUT_DIR=$INPUT_DIR/OUTPUT/${LINE_TEXT[0]}
+	OUTPUT_DIR=$INPUT_DIR/OUTPUT/${LINE_TEXT[3]}
 	INPUT_FILE="${LINE_TEXT[0]}.txt"
 
 	if [ $USEDELTA == 1 ]; then
 		DELTA=${LINE_TEXT[1]}
 	fi
 	ALPHA=${LINE_TEXT[2]}
+	ALPHA=$(( $ALPHA * 2 ))
 
 	echo ""
-	colorEcho "Processing ${LINE_TEXT[0]}${NC}" 1
+	colorEcho "Processing ${LINE_TEXT[3]}${NC}" 1
 
 	if [ ! -d $OUTPUT_DIR ]; then
 		mkdir $OUTPUT_DIR
